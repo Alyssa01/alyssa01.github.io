@@ -1,0 +1,87 @@
+<html> 
+<head>
+	<link type="text/css" rel="stylesheet"href="main.css/>"
+	<title> Mickey Mouse </title> 
+<script>
+	function banner(){ 
+var text = confirm("Did You Really Want to Click on My Banner?");
+return text; 
+}
+function answer(){
+	var radio = document.getElementsByName("trivia");
+var selection = false;
+var message = "kcr"; 
+for( var i = 0; i < radio.length; i++) {
+if(radio[i].value == "kcr" && radio[i].checked == true) { 
+selection = true; 
+} //end if statement 
+} //end for loop
+if(selection == true) {
+message = message + "<b><p style='color:green'>Way to go!</p></b>"; 
+} else { 
+message = message + "<b><p style='color:red'>Try again my friend.</p></b>"; 
+}
+document.getElementById("response").innerHTML = message;
+}//end function answer
+</script>
+
+</head> 
+<footer>Website made by Alyssa</footer>
+<body id="background"> 
+	<a href="http://bing.com" onclick="return banner()">
+		<header id="header">MICKEY MOUSE MICKEY MOUSE MICKEY MOUSE</header>
+	</a>
+	<nav>
+	  <ul "navmenu">
+	   <li><a class="navitem" href="index.html">Home</a></li>
+	   <li><a class="navitem" href="index.html">Pictures</a></li>
+	   <li><a class="navitem" href="index.html">Games</a></li>
+	  </ul>
+	</nav>
+ 	<h1> Mickey Mouse is the bomb.com </h1>
+
+ 	<div id="rightside">
+ 		</div>
+<div class="wrap-trivia">
+<h2>Mickey Mouse trivia question:</h2>
+<p> What year was Mickey Mouse created? </p>
+<form>
+	<input type="radio"name="trivia"value="34">1934<br>
+	<input type="radio"name="trivia"value="10">1910<br>
+	<input type="radio"name="trivia"value="28">1928<br>
+	<input type="radio"name="trivia"value="42">1942<br>
+	<input type="button" id="submit" value="Click Here" onclick="answer()" >
+<form>
+</div>
+<div id="response"></div>
+<div id="leftside>"
+ 	<p class="paragraph"> The theme of this website is <i> Mickey Mouse </i>. Because <u><span class="wrap-text">Mickey Mouse is the bomb.com.</span></u> <b> Mickey Mouse erryday!!!!</b></p>
+<div class="wrap-list">
+ <ol>
+ 	<li class="listitem"> Mickey Mouse is super cool</li>
+ 	<li class="listitem"> Mickey Mouse is the bestest</li>
+ 	<li class="listitem"> Mickey Mouse is my favorite</li>
+ </ol>
+
+<img src="https://thumbs.dreamstime.com/b/statue-walt-disney-mickey-mouse-26376310.jpg"/>
+<img src="https://thumbs.dreamstime.com/b/disney-store-logo-16401628.jpg"/>
+
+<video width="400" height="220" controls autoplay>
+<source src="http://www.w3schools.com/HTML/mov_bbb.mp4" type="video/mp4">
+<source src="http://www.w3schools.com/HTML/mov_bbb.ogg" type="video/ogg">
+Your browser does not support HTML5 video.
+</video>
+
+<audio width="400" height="220" controls autoplay>
+<source src="http://www.w3schools.com/tags/horse.mp3" type="audio/mpeg">
+Your browser does not support HTML 5 audio.
+</audio>  
+
+
+<hr>
+	<center> Alyssa <a href="http://disney.com">My Favorite Website </a> </center>
+<a class="homeLink" href="home.html">Home</a>
+</div>
+<div id="clrfloat"></div
+</body> 
+</html>
